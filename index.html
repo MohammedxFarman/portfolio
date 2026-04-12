@@ -257,24 +257,6 @@ section{
   background-clip:text;
 }
 .stat-label{font-size:.75rem;color:var(--muted);font-family:var(--font-mono);letter-spacing:.1em;margin-top:2px}
-
-.scroll-indicator{
-  position:absolute;bottom:40px;left:50%;transform:translateX(-50%);
-  display:flex;flex-direction:column;align-items:center;gap:8px;
-  animation:fadeUp .8s ease 1.6s both;
-}
-.scroll-mouse{
-  width:22px;height:36px;border:1.5px solid var(--muted);border-radius:12px;
-  position:relative;
-}
-.scroll-wheel{
-  width:4px;height:8px;background:var(--accent);border-radius:4px;
-  position:absolute;top:6px;left:50%;transform:translateX(-50%);
-  animation:scrollWheel 1.8s ease infinite;
-}
-@keyframes scrollWheel{0%{opacity:1;top:6px}80%{opacity:0;top:20px}100%{opacity:0;top:6px}}
-.scroll-text{font-family:var(--font-mono);font-size:.65rem;letter-spacing:.15em;color:var(--muted)}
-
 /* ─── ABOUT ──────────────────────────────────────────── */
 #about{
   display:grid;grid-template-columns:1fr 1fr;gap:80px;
