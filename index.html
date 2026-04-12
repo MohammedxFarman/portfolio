@@ -1066,6 +1066,11 @@ document.addEventListener('mousemove', e => {
   cursor.style.left = (mx-6)+'px';
   cursor.style.top  = (my-6)+'px';
 });
+document.addEventListener('touchmove', e => {
+  mx = e.touches[0].clientX; my = e.touches[0].clientY;
+  cursor.style.left = (mx-6)+'px';
+  cursor.style.top  = (my-6)+'px';
+});
 function animRing(){
   rx += (mx - rx) * 0.12;
   ry += (my - ry) * 0.12;
